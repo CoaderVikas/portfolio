@@ -17,15 +17,13 @@ function Home() {
       <Navbar />
       <Hero />
       <Skills />
-      <FeaturedProjects />
       <div className="arch-exp-section">
         <Experience />
         <SystemArchitecture />
       </div>
-      
       <Projects />
-      <About />
-      <Contact />
+      <FeaturedProjects />
+         <About />
       <Footer />
     </main>
   );

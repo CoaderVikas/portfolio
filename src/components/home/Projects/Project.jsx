@@ -5,13 +5,29 @@ const projectData = [
   {
     title: "Rental App",
     description:
-      "A full-stack property rental platform featuring secure booking, real-time availability, and a seamless user experience for tenants and owners.",
+      "Rental Hub is a microservices-based rental management platform that helps property owners verify tenant history, track rent payments, and manage multiple properties efficiently. It improves trust between owners and tenants through verified profiles, payment records, and feedback-based rental history.",
     link: "https://rental-hyca.onrender.com/",
-    tags: ["React", "Spring Boot", "PostgreSQL", "Cloudinary"],
+    tags: ["React", "JS", "Vite"],
+    icon: "🏠",
+  },
+   {
+    title: "Deployed Services",
+    description:
+      "Cloud-hosted microservice registered with Eureka Server Supports dynamic service discovery and load balancing Ensures scalable and reliable communication across microservices.",
+    link: "https://eureca-server.onrender.com/",
+    tags: ["Java", "Spring Boot", "PostgreSQL", "Kafka"],
     icon: "🏠",
   },
   {
-    title: "Project Two",
+    title: "Currently working service",
+    description:
+      "Coming Soon: A high-performance backend system currently under development using Microservices architecture.",
+    link: "#",
+    tags: ["Java", "Kafka", "Redis"],
+    icon: "⚙️",
+  },
+  {
+    title: "UpComming Project",
     description:
       "Coming Soon: A high-performance backend system currently under development using Microservices architecture.",
     link: "#",

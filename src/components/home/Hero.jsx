@@ -13,7 +13,7 @@ function Hero() {
 
           <p className="hero-description">
             Java | Spring Boot | Microservices | Kafka | Redis | ReactJS | SQL |
-            AWS | Docker & Kubernetes
+            AWS | Docker & Kubernetes | AI | Github Copilot
             <br />
             Building scalable and efficient backend systems.
           </p>
