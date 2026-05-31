@@ -1,3 +1,4 @@
+import { FaDownload } from "react-icons/fa";
 import "../../css/Navbar.css";
 
 function Navbar() {
@@ -16,11 +17,15 @@ function Navbar() {
         <li><a href="#contact">CONTACT</a></li>
       </ul>
 
-      <button className="resume-btn">
-        <a href="/Vikas_Yadav_Resume.pdf" download="Vikas_Yadav_Resume">
-          RESUME DOWNLOAD 
-        </a>
-      </button>
+     <button className="resume-btn">
+  <a
+    href="/Vikas_Yadav_Resume.docx"
+    download="Vikas_Yadav_Resume.docx"
+  >
+    <FaDownload className="download-icon" />
+    Resume Download
+  </a>
+</button>
     </nav>
   );
 }

@@ -2,15 +2,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Full width for better alignment */
-  height: 80px; /* Reduced height for a cleaner look */
+  width: 100%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3%; /* Percentage padding for responsiveness */
-  background: rgba(5, 8, 22, 0.8); /* Dark semi-transparent */
-  backdrop-filter: blur(10px); /* Glass effect */
-  z-index: 1000; /* Sabse upar rahega */
+  padding: 0 3%;
+  background: rgba(5, 8, 22, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
   box-sizing: border-box;
 }
 
@@ -34,7 +34,6 @@
   padding: 0;
 }
 
-/* Link Styling Fix */
 .nav-links li a {
   text-decoration: none;
   color: white;
@@ -44,9 +43,8 @@
   position: relative;
 }
 
-/* Hover Effect: Underline animation */
 .nav-links li a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -64,33 +62,57 @@
   width: 100%;
 }
 
+/* Resume Button */
 .resume-btn {
-  padding: 10px 20px;
   border: 2px solid #915eff;
-  border-radius: 8px;
+  border-radius: 10px;
   background: transparent;
-  transition: 0.3s;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .resume-btn a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
   text-decoration: none;
   color: white;
   font-weight: 600;
-  display: block;
+  font-size: 15px;
+}
+
+.download-icon {
+  font-size: 16px;
+  transition: transform 0.3s ease;
 }
 
 .resume-btn:hover {
   background: #915eff;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(145, 94, 255, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(145, 94, 255, 0.4);
 }
 
-/* Responsive: Mobile par hide karne ke liye ya menu icon ke liye space */
+.resume-btn:hover .download-icon {
+  transform: translateY(2px);
+}
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Mobile menu functionality alag se add karni hogi */
+    display: none;
   }
+
   .navbar {
-    padding: 0 30px;
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+
+  .resume-btn a {
+    padding: 10px 16px;
+    font-size: 14px;
   }
 }
