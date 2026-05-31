@@ -5,14 +5,14 @@ function SystemArchitecture() {
     <section className="system-card">
 
       <div className="card-header">
-        <h2>SYSTEM ARCHITECTURE</h2>
+        <h2>SYSTEM HIGH LEVEL ARCHITECTURE</h2>
         <div className="purple-line"></div>
       </div>
 
       <div className="architecture-flow">
 
         <div className="flow-box frontend">
-          React Frontend
+          RentSafe-UI
         </div>
 
         <div className="flow-arrow">↓</div>
@@ -26,11 +26,11 @@ function SystemArchitecture() {
         <div className="services-grid">
           <div className="flow-box">Auth Service</div>
           <div className="flow-box active">
-            TrackFull Service
+           Property Service
           </div>
           <div className="flow-box">Mailer Service</div>
           <div className="flow-box">
-            Notification Service
+            Others Service
           </div>
         </div>
 
@@ -50,11 +50,11 @@ function SystemArchitecture() {
 
         <div className="infra-row">
           <div className="flow-box db">
-            MySQL
+            PostgreSQL
           </div>
 
           <div className="flow-box db">
-            MongoDB
+            NO SQL
           </div>
         </div>
 
