@@ -186,7 +186,7 @@
 
 .arch-exp-section{
   max-width: 100%;
-  padding: 0 135px;
+  padding: 30px 135px;
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 50px;

@@ -3,7 +3,7 @@ import laptopImage from "../../assets/image.png";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="hero-container">
         {/* Left Side */}
         <div className="hero-left">
@@ -58,6 +58,15 @@ function Hero() {
 
             <a href="mailto:vikas.yadav83499@gmail.com" title="Email">
               <i className="fas fa-envelope"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/mr_viks_official/"
+              target="_blank"
+              rel="noreferrer"
+              title="Instagram"
+            >
+              <i className="fab fa-instagram"></i>
             </a>
           </div>
         </div>

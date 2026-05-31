@@ -2,7 +2,7 @@ import "../../css/SystemArchitecture.css";
 
 function SystemArchitecture() {
   return (
-    <section className="system-card">
+    <section className="system-card" id="architecture">
 
       <div className="card-header">
         <h2>SYSTEM HIGH LEVEL ARCHITECTURE</h2>

@@ -14,7 +14,7 @@ function Navbar() {
         <li><a href="#projects">PROJECTS</a></li>
         <li><a href="#architecture">ARCHITECTURE</a></li>
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#hero">CONTACT</a></li>
       </ul>
 
      <button className="resume-btn">
