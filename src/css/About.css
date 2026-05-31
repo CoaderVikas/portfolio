@@ -1,0 +1,23 @@
+.about {
+  background: #050816;
+  color: white;
+  padding: 20px 80px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #915eff;
+}
+
+.about-text {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #9ca3af;
+  max-width: 900px;
+}

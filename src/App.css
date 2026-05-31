@@ -182,3 +182,20 @@
     border-right-color: var(--border);
   }
 }
+
+
+.arch-exp-section{
+  max-width: 100%;
+  padding: 0 135px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  background: #050816;
+}
+
+@media(max-width: 1000px){
+  .arch-exp-section{
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}

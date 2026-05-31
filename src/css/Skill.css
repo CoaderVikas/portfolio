@@ -1,0 +1,100 @@
+.skills {
+  width: 100%;
+  background: #050816;
+  padding: 0;       /* Super absolute zero top/bottom spacing */
+  margin: 0;        /* No outer space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.skills-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 80px;  /* Hero container ke padding ke sath balance */
+}
+
+/* THE SINGLE MAIN CARD */
+.single-skills-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(145, 94, 255, 0.15);
+  padding: 20px 20px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; /* Sub-elements left-aligned */
+  gap: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.skills-card-header .section-title {
+  font-size: 20px; /* Professional micro-tag look */
+  color: #9ca3af;  
+  margin: 0 0 6px 0;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.purple-line-left {
+  width: 355px;
+  height: 3px;
+  background: #915eff;
+  border-radius: 2px;
+}
+
+/* Force Skills in ONE Continuous Row */
+.skills-badges-container {
+  display: flex;
+  flex-wrap: nowrap; 
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Hide Scrollbar for clean UI on desktops */
+.skills-badges-container::-webkit-scrollbar {
+  height: 4px;
+}
+.skills-badges-container::-webkit-scrollbar-thumb {
+  background: rgba(145, 94, 255, 0.3);
+  border-radius: 10px;
+}
+
+/* Individual Skill Badges */
+.skill-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 6px 14px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  flex-shrink: 0;          /* Kisi bhi icon/text ko shrink hone se rokega */
+  transition: all 0.3s ease;
+}
+
+.skill-icon {
+  font-size: 18px;
+}
+
+.skill-name {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 0 20px;
+  }
+  .single-skills-card {
+    padding: 15px;
+  }
+}

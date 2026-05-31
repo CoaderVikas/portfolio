@@ -1,0 +1,62 @@
+.system-card{
+  background: rgba(255,255,255,.02);
+  border:1px solid rgba(145,94,255,.15);
+  border-radius:16px;
+  padding:20px;
+  backdrop-filter: blur(10px);
+}
+
+.card-header h2{
+  color:#9ca3af;
+  font-size:20px;
+  letter-spacing:2px;
+  margin-bottom:8px;
+}
+
+
+.architecture-flow{
+  margin-top:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.flow-arrow{
+  color:#915eff;
+  font-size:28px;
+  margin:12px 0;
+}
+
+.flow-box{
+  background:#1d1836;
+  border:1px solid rgba(145,94,255,.3);
+  color:white;
+  padding:10px 20px;
+  border-radius:12px;
+  text-align:center;
+}
+
+.frontend{
+  width:220px;
+}
+
+.gateway{
+  width:220px;
+}
+
+.active{
+  border-color:#915eff;
+  background:rgba(145,94,255,.15);
+}
+
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  width:70%;
+}
+
+.infra-row{
+  display:flex;
+  gap:15px;
+}

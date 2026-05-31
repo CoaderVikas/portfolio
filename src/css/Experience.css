@@ -1,0 +1,162 @@
+.experience {
+  background: transparent;
+  padding: 0;
+  color: white;
+  height: 100%;
+}
+
+.experience-container {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(145, 94, 255, 0.15);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  
+}
+
+/* Header */
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 5px;
+}
+
+.purple-line-left {
+  width: 260px;
+  height: 3px;
+  background: #915eff;
+  border-radius: 10px;
+}
+
+.section-subtitle {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+/* Timeline */
+
+.timeline {
+  position: relative;
+  margin-top: 35px;
+  padding-left: 45px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #915eff,
+    rgba(145, 94, 255, 0.1)
+  );
+}
+
+/* Timeline Item */
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+/* ICON CIRCLE (UPDATED FOR LOGO SUPPORT) */
+.timeline-icon {
+  position: absolute;
+  left: -45px;
+  width: 44px;
+  height: 44px;
+  background: #1d1836;
+  border: 2px solid #915eff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(145, 94, 255, 0.35);
+}
+
+/* LOGO IMAGE INSIDE ICON */
+.timeline-icon img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+/* Card */
+
+.timeline-content {
+  background: #1d1836;
+  padding: 10px 20px;
+  border-radius: 16px;
+  border-left: 2px solid #915eff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+  transform: translateX(6px);
+  background: #241d42;
+}
+
+/* Year */
+.timeline-date {
+  display: inline-block;
+  color: #915eff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Company + Role */
+.timeline-content h3 {
+  font-size: 16px;
+  margin: 8px 0 0;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 20px;
+  }
+
+  .timeline {
+    padding-left: 35px;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-icon {
+    left: -35px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .timeline-content {
+    padding: 14px 16px;
+  }
+
+  .timeline-content h3 {
+    font-size: 14px;
+  }
+
+  .purple-line-left {
+    width: 180px;
+  }
+}
+
+.experience-title {
+  font-size: 24px !important;
+}

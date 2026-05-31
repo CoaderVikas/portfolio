@@ -1,0 +1,96 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width for better alignment */
+  height: 80px; /* Reduced height for a cleaner look */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%; /* Percentage padding for responsiveness */
+  background: rgba(5, 8, 22, 0.8); /* Dark semi-transparent */
+  backdrop-filter: blur(10px); /* Glass effect */
+  z-index: 1000; /* Sabse upar rahega */
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #915eff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link Styling Fix */
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* Hover Effect: Underline animation */
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #915eff;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #915eff;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.resume-btn {
+  padding: 10px 20px;
+  border: 2px solid #915eff;
+  border-radius: 8px;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.resume-btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  display: block;
+}
+
+.resume-btn:hover {
+  background: #915eff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(145, 94, 255, 0.4);
+}
+
+/* Responsive: Mobile par hide karne ke liye ya menu icon ke liye space */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Mobile menu functionality alag se add karni hogi */
+  }
+  .navbar {
+    padding: 0 30px;
+  }
+}

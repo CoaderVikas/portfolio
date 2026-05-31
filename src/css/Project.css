@@ -1,0 +1,159 @@
+
+/* ========================= */
+/* PROJECTS SECTION */
+/* ========================= */
+
+.projects {
+  background: #050816;
+  color: white;
+  padding: 100px 0;
+}
+
+.projects-container {
+  max-width: 1550px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.purple-line-left {
+  width: 60px;
+  height: 4px;
+  background: #915eff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  color: #9ca3af;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 30px;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.project-card {
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(145, 94, 255, 0.15);
+
+  border-radius: 24px;
+
+  backdrop-filter: blur(10px);
+
+  transition: all 0.35s ease;
+
+  box-shadow:
+    0 0 20px rgba(145, 94, 255, 0.08),
+    inset 0 0 8px rgba(255, 255, 255, 0.02);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #915eff;
+
+  box-shadow:
+    0 0 30px rgba(145, 94, 255, 0.35),
+    0 0 60px rgba(145, 94, 255, 0.12);
+}
+
+.project-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.project-icon {
+  font-size: 36px;
+}
+
+.project-header h3 {
+  font-size: 26px;
+  color: white;
+}
+
+.project-content p {
+  color: #9ca3af;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* ========================= */
+/* TAGS */
+/* ========================= */
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tag {
+  padding: 8px 14px;
+  border-radius: 10px;
+
+  background: rgba(145, 94, 255, 0.15);
+
+  border: 1px solid rgba(145, 94, 255, 0.2);
+
+  color: #d8b4fe;
+
+  font-size: 14px;
+}
+
+/* ========================= */
+/* LINK */
+/* ========================= */
+
+.view-link {
+  margin-top: auto;
+
+  color: #915eff;
+
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  transition: 0.3s ease;
+}
+
+.project-card:hover .view-link {
+  gap: 12px;
+}
+
+.view-link.disabled {
+  color: #6b7280;
+}
