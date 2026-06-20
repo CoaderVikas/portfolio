@@ -9,7 +9,7 @@ function Hero() {
         <div className="hero-left">
           <h1 className="hero-title">Vikas Yadav</h1>
 
-          <h2 className="hero-subtitle">Java FullStack Developer</h2>
+          <h2 className="hero-subtitle">Java backend Developer</h2>
 
           <p className="hero-description">
             Java | Spring Boot | Microservices | Kafka | Redis | ReactJS | SQL |
