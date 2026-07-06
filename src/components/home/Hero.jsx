@@ -22,7 +22,7 @@ function Hero() {
             <button
               className="primary-btn"
               onClick={() =>
-                window.open("https://rental-hyca.onrender.com/", "_blank")
+                window.open("https://rental-w2je.onrender.com/", "_blank")
               }
             >
               Live Project

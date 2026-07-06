@@ -6,7 +6,7 @@ const projectData = [
     title: "Rental App",
     description:
       "Rental Hub is a microservices-based rental management platform that helps property owners verify tenant history, track rent payments, and manage multiple properties efficiently. It improves trust between owners and tenants through verified profiles, payment records, and feedback-based rental history.",
-    link: "https://rental-hyca.onrender.com/",
+    link: "https://rental-w2je.onrender.com/",
     tags: ["React", "JS", "Vite"],
     icon: "🏠",
   },
@@ -14,7 +14,7 @@ const projectData = [
     title: "Deployed Services",
     description:
       "Cloud-hosted microservice registered with Eureka Server Supports dynamic service discovery and load balancing Ensures scalable and reliable communication across microservices.",
-    link: "https://eureca-server.onrender.com/",
+    link: "https://eureca-server-e09m.onrender.com/",
     tags: ["Java", "Spring Boot", "PostgreSQL", "Kafka"],
     icon: "🏠",
   },
